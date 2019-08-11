@@ -2,7 +2,9 @@
 <html>
   <head>
     <title>Pizza Builder</title>
-    <link rel="stylesheet" href="pizza.css">
+    <link rel="stylesheet" href="pizza.css" />
+    <script src="../javascript/jquery-3.4.1.min.js"></script>
+    <script src="./pizza.js"></script>
   </head>
 
   <body>
@@ -36,18 +38,18 @@
     <!-- End Controls -->
 
     <!-- Price -->
-    <aside class="panel price">
+    <aside class="panel number">
       <h2>Your pizza's price</h2>
 
       <b>$10 cheese pizza</b>
       <ul>
-        <li>$1 pepperonni</li>
-        <li>$1 mushrooms</li>
-        <li>$1 green peppers</li>
-        <li>$3 white sauce</li>
-        <li>$5 gluten-free crust</li>
+        <li class="price-pepperoni">$ <span>5</span> pepperonni</li>
+        <li class="price-mushrooms">$ <span>2</span> mushrooms</li>
+        <li class="price-green-peppers">$ <span>3</span> green peppers</li>
+        <li class="price-sauce">$ <span>4</span> white sauce</li>
+        <li class="price-crust">$ <span>5</span> gluten-free crust</li>
       </ul>
-      <strong>$21</strong>
+      <strong id="total-price">$<span>29</span> </strong>
     </aside>
     <!-- End Price -->
 
